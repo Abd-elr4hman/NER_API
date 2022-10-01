@@ -3,5 +3,4 @@ Flask-Session
 werkzeug
 pathlib
 transformers[torch]
-opencv-python
 waitress
