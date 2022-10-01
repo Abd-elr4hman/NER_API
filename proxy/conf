@@ -1,0 +1,11 @@
+server {
+    listen 80;
+    server_name localhost;
+    client_max_body_size 1M;
+    access_log off;
+
+    location / {
+        # Proxy to application server
+        proxy_pass http://web:5000;
+    }
+}
