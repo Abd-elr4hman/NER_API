@@ -22,7 +22,7 @@ cd to Named-Entity-Recognition-API
 docker-compose up  
 ```
 
-## Local Run
+## Use locally 
 - Navigate to your browser and go to http://localhost:5000/
 - Upload a file with format of one of the following('.txt')
 	- Upload a text file to extract NER from the text.
