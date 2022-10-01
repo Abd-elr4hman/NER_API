@@ -1,21 +1,24 @@
 # Named-Entity-Recognition-API
-a RESTful API to extract named entities (English) from a text file.
+a RESTful API to extract named entities (English) from a text file using [bert-base-NER](https://huggingface.co/dslim/bert-base-NER). Impelemnted with flask. 
 
 ## Installation and Running Locally
-
+Download the model file from [here](https://drive.google.com/drive/folders/13nEVxIuxWSqj2dTyGfkIVePr24o0dJlh?usp=sharing) and place it in 
+```
+./web/src
+```
 ### Using pip
 In your python env run
 ```
-cd to submission/challenge/web
+cd to Named-Entity-Recognition-API/web
 pip install -r requirements.txt
 python src/waitress_server.py 
 ```
 ### Using docker
 
 #### Build your own containers
-make sure docker is installed on your system, open terminal and run the following commands
+Run the following commands
 ```
-cd to submission/challenge
+cd to Named-Entity-Recognition-API
 docker-compose up  
 ```
 
