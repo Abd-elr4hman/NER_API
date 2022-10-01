@@ -1,5 +1,5 @@
 # Named-Entity-Recognition-API
-a RESTful API to extract named entities (English) from a text file
+a RESTful API to extract named entities (English) from a text file.
 
 ## Installation and Running Locally
 
