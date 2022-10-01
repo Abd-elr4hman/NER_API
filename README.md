@@ -9,7 +9,7 @@ Download the model file from [here](https://drive.google.com/drive/folders/13nEV
 ### Using pip
 In your python env run
 ```
-cd to Named-Entity-Recognition-API/web
+cd Named-Entity-Recognition-API/web
 pip install -r requirements.txt
 python src/waitress_server.py 
 ```
