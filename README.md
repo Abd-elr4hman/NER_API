@@ -1,5 +1,5 @@
 # Named-Entity-Recognition-API
-a RESTful API to extract named entities (English) from a text file using [bert-base-NER](https://huggingface.co/dslim/bert-base-NER). Implemented with flask. 
+a RESTful API to extract named entities (English) from text using [bert-base-NER](https://huggingface.co/dslim/bert-base-NER). Implemented with flask. 
 
 ## Run Locally
 Download the model file from [here](https://drive.google.com/drive/folders/13nEVxIuxWSqj2dTyGfkIVePr24o0dJlh?usp=sharing) and place it in:
