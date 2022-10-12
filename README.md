@@ -22,7 +22,7 @@ cd to Named-Entity-Recognition-API
 docker-compose up  
 ```
 
-## Use locally 
-- Navigate to your browser and go to http://localhost:5000/
-- Upload a file with format of one of the following('.txt')
-	- Upload a text file to extract NER from the text.
+## test locally 
+```
+curl --header "Content-Type: application/json"  --request POST   --data '{"instances":["my name is Ahmed I live in Germany"]}' http://localhost:5000/predict
+```
