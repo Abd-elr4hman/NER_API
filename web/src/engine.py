@@ -1,23 +1,21 @@
 from transformers import AutoTokenizer, AutoModelForTokenClassification
 from transformers import pipeline
+import pathlib
 
-def process_text(file):
-    # Open text file 
-    with open(file, 'r') as f:
-        # Save text in Contents
-        Contents = f.read()
-    
+def process_text(Instances_list):
+
+    pathlike = pathlib.Path("./src/bert-base-NER")
+
     # Initialize tokenizer
-    tokenizer = AutoTokenizer.from_pretrained("./src/bert-base-NER")
+    tokenizer = AutoTokenizer.from_pretrained(pathlike)
     
     # Initialize Model
-    model = AutoModelForTokenClassification.from_pretrained("./src/bert-base-NER")
-    
+    model = AutoModelForTokenClassification.from_pretrained(pathlike)
+
     # Initialize Pipeline
     nlp = pipeline("ner", model=model, tokenizer=tokenizer)
 
-    # Run prediction 
-    ner_results = nlp(Contents)
+    #NER_PREDS= []
+    ner_results = nlp(Instances_list)
 
-    return str(ner_results)  # Return result as string
-
+    return ner_results # Return result as string
