@@ -22,7 +22,7 @@ cd to Named-Entity-Recognition-API
 docker-compose up  
 ```
 
-## test locally 
+## Test locally 
 ```
 curl --header "Content-Type: application/json"  --request POST   --data '{"instances":["my name is Ahmed I live in Germany"]}' http://localhost:5000/predict
 ```
